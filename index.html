@@ -57,10 +57,32 @@
             </div>
             <div class="idiomas">
                 <h1>Idiomas</h1>
-                <h2>Português</h2>
-                <h2>Inglês</h2>
-                <h2>Alemão</h2>
-                <h2>Espanhol</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Português</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="proficiencia">Nativo</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Inglês</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="proficiencia">Avançado</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Alemão</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="proficiencia">Básico</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Espanhol</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="proficiencia">Básico</h2>
+                    </div>
+                </div>
             </div>
             <div class="competencias">
                 <h1>Competêcias</h1>
@@ -170,25 +192,32 @@
                         </ul>
                     </div>
                 </div>
-                <button onclick="change()" data-toggle="collapse" data-target="#antigos" class="btn btn-primary btn-block" id="toggle"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                <button onclick="change()" data-toggle="collapse" data-target="#antigos" class="btn btn-primary btn-block" id="toggle">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
 
             </div>
         </div>
     </div>
-    <footer class="curriculo" align="left">
-        <div class="coluna">
-        <p>
-            Giovanni Rossini | 
-            <a href="mailto:giovannijrrossini@gmail.com">giovannijrrossini@gmail.com</a>
-        </p>
-    </div>
-    <div class="coluna" align="right">
-        <ul>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-google"></a></li>
-        <li><a href="#" class="fa fa-linkedin"></a></li>
-        </ul>
-    </div>
+    <footer>
+        <div>
+            <ul>
+                <li id="contato">
+                    Giovanni Rossini |
+                    <a href="mailto:giovannijrrossini@gmail.com">giovannijrrossini@gmail.com</a>
+
+                </li>
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" id="google" class="fa fa-google"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 

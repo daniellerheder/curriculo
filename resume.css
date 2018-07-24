@@ -43,6 +43,7 @@ div {
 .curriculo {
     display: flex;
     font-family: 'Oswald', sans-serif;
+    border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
 
 /* .idiomas {
@@ -81,6 +82,19 @@ div {
     border-bottom: 0;
     display: table;
 }
+.col-sm-6 {
+    margin: auto -5%;
+    border-bottom: 0;
+    display: table;
+}
+
+.col-sm-6 h2 {
+    margin-left: 10%;
+}
+
+.proficiencia {
+    text-align: right;
+}
 
 .col-sm-4 img {
     width: 64px;
@@ -117,7 +131,17 @@ footer li {
         display: inline;
 }
 
-footer .coluna {
-    font-size: 25px;
+footer div {
+    flex: 33%;
+    font-size: 80%;
     margin: auto 15% auto 5% ;
+    border-bottom: 0;
+}
+
+#google:hover {
+    color: #F35045;
+}
+
+#contato {
+    margin: auto 33% 33% auto;
 }
