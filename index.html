@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function change() {
+            var change = document.getElementById("toggle");
+            if (change.innerHTML == '<span class="glyphicon glyphicon-chevron-down"></span>') {
+                change.innerHTML = '<span class="glyphicon glyphicon-chevron-up"></span>';
+            }
+            else {
+                change.innerHTML = '<span class="glyphicon glyphicon-chevron-down"></span>';
+            }
+        }
+    </script>
 
 </head>
 
@@ -26,18 +39,12 @@
 
     <div class="resumo">
         <p>
-            Lorem Ipsum é simplesmente uma simulação de 
-            texto da indústria tipográfica e de impressos, 
-            e vem sendo utilizado desde o século XVI, 
-            quando um impressor desconhecido pegou uma 
-            bandeja de tipos e os embaralhou para fazer 
-            um livro de modelos de tipos. Lorem Ipsum sobreviveu
-             não só a cinco séculos, como também ao salto para a 
-             editoração eletrônica, permanecendo essencialmente inalterado.
-              Se popularizou na década de 60, quando a Letraset lançou 
-              decalques contendo passagens de Lorem Ipsum, e mais 
-              recentemente quando passou a ser integrado a softwares de 
-              editoração eletrônica como Aldus PageMaker.
+            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o
+            século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de
+            modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica,
+            permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo
+            passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica
+            como Aldus PageMaker.
         </p>
     </div>
 
@@ -58,19 +65,43 @@
             <div class="competencias">
                 <h1>Competêcias</h1>
                 <div class="row">
-                    <div class="col-sm-4"><img src="icons/html5.png" title="HTML5"></div>
-                    <div class="col-sm-4"><img src="icons/css3.png" title="CSS3"></div>
-                    <div class="col-sm-4"><img src="icons/js.png" title="JavaScript"></div>
-                    <div class="col-sm-4"><img src="icons/python.png" title="Python"></div>
-                    <div class="col-sm-4"><img src="icons/laravel.png" title="Laravel"></div>
-                    <div class="col-sm-4"><img src="icons/git.png" title="Git"></div>
-                    <div class="col-sm-4"><img src="icons/docker.png" title="Docker"></div>
-                    <div class="col-sm-4"><img src="icons/node.png" title="Node.js"></div>
-                    <div class="col-sm-4"><img src="icons/gitlab.png" title="Gitlab CI"></div>
-                    <div class="col-sm-4"><img src="icons/aws.png" title="Amazon Web Services"></div>
-                    <div class="col-sm-4"><img src="icons/vmware.png" title="VMWare Worstation"></div>
-                    <div class="col-sm-4"><img src="icons/xen.png" title="Xen Server"></div>
-                  </div>
+                    <div class="col-sm-4">
+                        <img src="icons/html5.png" title="HTML5">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/css3.png" title="CSS3">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/js.png" title="JavaScript">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/python.png" title="Python">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/laravel.png" title="Laravel">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/git.png" title="Git">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/docker.png" title="Docker">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/node.png" title="Node.js">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/gitlab.png" title="Gitlab CI">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/aws.png" title="Amazon Web Services">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/vmware.png" title="VMWare Worstation">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="icons/xen.png" title="Xen Server">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="coluna">
@@ -110,41 +141,54 @@
                         <li>Orquestração</li>
                     </ul>
                 </div>
-                <div id="tilibra">
-                    <h1>Tilibra Produtos de Papelaria LTDA.</h1>
-                    <h2>Estagiário de Infraestrutura e Redes</h2>
-                    <h3>December 2016 – July 2017</h3>
-                    <ul>
-                        <li>Manutenção intermediária em servidores</li>
-                        <li>Gerenciamento de servidores</li>
-                        <li>Gerenciamento de redes</li>
-                        <li>Monitoramento de redes e computadores</li>
-                    </ul>
-                    <h2>Estagiário de Suporte em Infraestrutura e Helpdesk</h2>
+                <div id="antigos" class="collapse">
+                    <div id="tilibra">
+                        <h1>Tilibra Produtos de Papelaria LTDA.</h1>
+                        <h2>Estagiário de Infraestrutura e Redes</h2>
+                        <h3>December 2016 – July 2017</h3>
+                        <ul>
+                            <li>Manutenção intermediária em servidores</li>
+                            <li>Gerenciamento de servidores</li>
+                            <li>Gerenciamento de redes</li>
+                            <li>Monitoramento de redes e computadores</li>
+                        </ul>
+                        <h2>Estagiário de Suporte em Infraestrutura e Helpdesk</h2>
 
-                    <h3>May 2016 – December 2016</h3>
-                    <ul>
-                        <li>Suporte ao usuário final, voltado para infraestrutura</li>
-                        <li>Manutenção básica em computadores</li>
-                        <li>Helpdesk</li>
-                    </ul>
-                </div>
-                <div id="multicobra">
-                    <h1>Grupo Multicobra</h1>
-                    <h2>Suporte em Sistema de Informações</h2>
-                    <h3>August 2015 – May 2016</h3>
-                    <ul>
+                        <h3>May 2016 – December 2016</h3>
+                        <ul>
+                            <li>Suporte ao usuário final, voltado para infraestrutura</li>
+                            <li>Manutenção básica em computadores</li>
+                            <li>Helpdesk</li>
+                        </ul>
+                    </div>
+                    <div id="multicobra">
+                        <h1>Grupo Multicobra</h1>
+                        <h2>Suporte em Sistema de Informações</h2>
+                        <h3>August 2015 – May 2016</h3>
+                        <ul>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
+                <button onclick="change()" data-toggle="collapse" data-target="#antigos" class="btn btn-primary btn-block" id="toggle"><span class="glyphicon glyphicon-chevron-down"></span></button>
+
             </div>
         </div>
     </div>
-    <footer>
-        <h1>Giovanni Rossini | giovannijrrossini@gmail.com</h1>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
+    <footer class="curriculo" align="left">
+        <div class="coluna">
+        <p>
+            Giovanni Rossini | 
+            <a href="mailto:giovannijrrossini@gmail.com">giovannijrrossini@gmail.com</a>
+        </p>
+    </div>
+    <div class="coluna" align="right">
+        <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-google"></a></li>
+        <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+    </div>
     </footer>
 </body>
 

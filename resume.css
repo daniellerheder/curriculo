@@ -91,3 +91,33 @@ div {
     transform: scale(1.3);
     transition: all 400ms ease-in-out;
 }
+
+#multicobra {
+    border-bottom: 0;
+}
+
+footer {
+    font-size: 180%;
+    text-align: center;
+    color:  rgb(23, 23, 23);
+    text-decoration: none;
+    width: 100%;
+}
+
+footer a{
+    color: rgb(23, 23, 23);
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #337AB7;
+}
+
+footer li {
+        display: inline;
+}
+
+footer .coluna {
+    font-size: 25px;
+    margin: auto 15% auto 5% ;
+}
