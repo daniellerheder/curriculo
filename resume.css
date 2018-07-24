@@ -51,3 +51,22 @@ div {
     border-bottom: 0;
     /* border-left: 0.08rem solid rgb(153, 153, 153); */
 }
+
+.row {
+    border-bottom: 0;
+    display: inline-table;
+    width: 100%;
+    padding-left: 15%;
+}
+
+.col-sm-4 {
+    padding: 3px;
+    margin: auto -5%;
+    border-bottom: 0;
+    display: table;
+}
+
+.col-sm-4 img {
+    width: 64px;
+    height: 64px;
+}
