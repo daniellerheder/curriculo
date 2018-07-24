@@ -1,0 +1,53 @@
+body {
+    background-color: lightgray;
+}
+
+div {
+    margin: 1.8rem auto;
+    border-bottom: 0.08rem solid rgb(153, 153, 153);
+    width: 80%;
+}
+
+.header {
+    text-align: center;
+    border-top: 0.08rem solid rgb(22, 22, 22);
+}
+
+.header h1 {
+    color: rgb(33, 33, 33);
+    font-size: 420%;
+}
+
+.header h2 {
+    color: rgb(53, 53, 53);
+    font-size: 210%;
+    font-style: italic;
+    margin-top: -2%;
+}
+
+.resumo {
+    display: flex;
+}
+
+/* .idiomas {
+    display: flex;
+}
+
+.idiomas .coluna {
+    margin: 8%;
+}
+
+#nomes{
+    margin-left: -20%;
+}
+
+#progresso {
+    margin-left: 20%; 
+} */
+
+.coluna {
+    flex: 50%;
+    padding: 10px;
+    border-bottom: 0;
+    /* border-left: 0.08rem solid rgb(153, 153, 153); */
+}
