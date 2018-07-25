@@ -48,8 +48,13 @@ div {
     border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
 
-.educacao {
-  
+.emprego ul {
+    font-size: medium;
+    margin-bottom: 3.5%;
+}
+
+#antigos {
+    margin: 0;
 }
 
 .coluna {
