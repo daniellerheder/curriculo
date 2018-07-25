@@ -64,6 +64,10 @@ div {
     /* border-left: 0.08rem solid rgb(153, 153, 153); */
 }
 
+.competencias {
+    border-bottom: 0;
+}
+
 .row {
     border-bottom: 0;
     display: inline-table;
