@@ -40,27 +40,17 @@ div {
     text-justify: auto;
 }
 
+
+
 .curriculo {
     display: flex;
     font-family: 'Oswald', sans-serif;
     border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
 
-/* .idiomas {
-    display: flex;
+.educacao {
+  
 }
-
-.idiomas .coluna {
-    margin: 8%;
-}
-
-#nomes{
-    margin-left: -20%;
-}
-
-#progresso {
-    margin-left: 20%; 
-} */
 
 .coluna {
     flex: 50%;
