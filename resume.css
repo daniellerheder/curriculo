@@ -91,6 +91,10 @@ div {
     margin-left: 10%;
 }
 
+.experiencia {
+    border-bottom: 0;
+}
+
 .proficiencia {
     text-align: right;
 }
@@ -107,6 +111,11 @@ div {
 
 #multicobra {
     border-bottom: 0;
+}
+
+.btn {
+    background-color: transparent;
+    margin-left: 40%;
 }
 
 footer {
@@ -137,10 +146,67 @@ footer div {
     border-bottom: 0;
 }
 
-#google:hover {
+.fa-github:hover {
+    color: dimgray;
+}
+
+.fa-google:hover {
     color: #F35045;
 }
 
 #contato {
     margin: auto 33% 33% auto;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .header {
+        height: 33%;
+    }
+    .resumo {
+        height: 60%;
+    }
+
+    .curriculo {
+        display: block
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .educacao {
+        height: 30%
+    }
+
+    .idiomas {
+        height: 50%;
+    }
+
+    .proficiencia {
+        display: none;
+    }
+
+    .col-sm-4 {
+        width: 64px;
+
+    }
+
+    .row {
+        display: inline-block;
+        height: 80%;
+    }
+
+    #antigos {
+        display: none;
+    }
+
+    #toggle {
+        display: none;
+    }
+    
+    #tesseract{
+        border-bottom: 0;
+    }
+
 }
