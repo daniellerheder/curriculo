@@ -205,6 +205,10 @@ footer div {
 
 @media only screen and (max-width: 768px) {
     
+    #pdf {
+        display: none;
+    }
+    
     div {
         margin: 5px auto;
         padding: 3px;
@@ -230,6 +234,13 @@ footer div {
 
     .proficiencia {
         display: none;
+    }
+    
+    .col-xs-4 {
+        padding: 5px;
+        margin: auto -2.52%;
+        border-bottom: 0;
+        display: table;
     }
     
     .competencias {
