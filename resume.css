@@ -1,6 +1,25 @@
 /* Importação da fonte Oswald */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+#pdf {
+    position: fixed;
+    width: 5%;
+    margin: 5.5% 95.09%;
+    height: 12%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 160%;
+    background-color: rgb(180, 52, 52);
+    color: white;
+    padding: 15px 15px;
+}
+
+#pdf:hover {
+    width: 10%;
+    margin-left: 90.09%;
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
 /* Header e Resumo */
 .header {
     font-family: 'Oswald', sans-serif;
@@ -184,6 +203,16 @@ footer div {
 /* Responsivo Celular */
 
 @media only screen and (max-width: 768px) {
+    
+    div {
+        margin: 5px auto;
+        padding: 3px;
+        width: 90%
+    }
+    
+    h2 {
+        margin-top: -12%;
+    }
 
     .resumo {
         padding: 5px 8px;    
@@ -195,10 +224,15 @@ footer div {
 
     .coluna {
         width: 100%;
+        padding: 3px;
     }
 
     .proficiencia {
         display: none;
+    }
+    
+    .competencias {
+        border-bottom: 0.08rem solid rgb(153, 153, 153);
     }
 
     #antigos {
