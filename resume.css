@@ -1,15 +1,7 @@
+/* Importação da fonte Oswald */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body {
-    background-color: lightgray;
-}
-
-div {
-    margin: 1.8rem auto;
-    border-bottom: 0.08rem solid rgb(153, 153, 153);
-    width: 80%;
-}
-
+/* Header e Resumo */
 .header {
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -40,7 +32,17 @@ div {
     text-justify: auto;
 }
 
+/* Corpo */
 
+body {
+    background-color: lightgray;
+}
+
+div {
+    margin: 1.8rem auto;
+    border-bottom: 0.08rem solid rgb(153, 153, 153);
+    width: 80%;
+}
 
 .curriculo {
     display: flex;
@@ -48,23 +50,9 @@ div {
     border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
 
-.emprego ul {
-    font-size: medium;
-    margin-bottom: 3.5%;
-}
-
-#antigos {
-    margin: 0;
-}
-
 .coluna {
     flex: 50%;
     padding: 10px;
-    border-bottom: 0;
-    /* border-left: 0.08rem solid rgb(153, 153, 153); */
-}
-
-.competencias {
     border-bottom: 0;
 }
 
@@ -75,12 +63,33 @@ div {
     padding-left: 15%;
 }
 
-.col-sm-4 {
-    padding: 7.5px;
-    margin: auto -5%;
+
+/* Emprego */
+
+.emprego ul {
+    font-size: medium;
+    margin-bottom: 3.5%;
+} 
+
+.experiencia {
     border-bottom: 0;
-    display: table;
 }
+
+#multicobra {
+    border-bottom: 0;
+}
+
+#antigos {
+    margin: 0;
+}
+
+.btn {
+    background-color: transparent;
+    margin-left: 40%;
+}
+
+/* Idiomas */
+
 .col-sm-6 {
     margin: auto -5%;
     border-bottom: 0;
@@ -91,32 +100,36 @@ div {
     margin-left: 10%;
 }
 
-.experiencia {
-    border-bottom: 0;
-}
-
 .proficiencia {
     text-align: right;
 }
 
-.col-sm-4 img {
+/* Tecnologia */
+
+.col-xs-4 {
+    padding: 7.5px;
+    margin: auto -5%;
+    border-bottom: 0;
+    display: table;
+}
+
+.col-xs-4 img {
     width: 64px;
     height: 64px;
 }
 
-.col-sm-4 img:hover {
+.col-xs-4 img:hover {
     transform: scale(1.3);
     transition: all 400ms ease-in-out;
 }
 
-#multicobra {
+/* Competencias */
+
+.competencias {
     border-bottom: 0;
 }
 
-.btn {
-    background-color: transparent;
-    margin-left: 40%;
-}
+/* Rodapé */
 
 footer {
     font-size: 180%;
@@ -158,13 +171,15 @@ footer div {
     margin: auto 33% 33% auto;
 }
 
+/* Responsivo Celular */
+
 @media only screen and (max-width: 768px) {
     
     .header {
         height: 33%;
     }
     .resumo {
-        height: 60%;
+        height: 47%;
     }
 
     .curriculo {
@@ -176,11 +191,11 @@ footer div {
     }
 
     .educacao {
-        height: 30%
+        height: 35%
     }
 
     .idiomas {
-        height: 50%;
+        height: 45%;
     }
 
     .proficiencia {
