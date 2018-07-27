@@ -3,6 +3,7 @@
 
 /* Header e Resumo */
 .header {
+    height: auto;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     border-top: 0.08rem solid rgb(22, 22, 22);
@@ -26,6 +27,7 @@
 .resumo {
     padding: 12px 25px;
     font-family: 'Oswald', sans-serif;
+    height: auto;
 }
 
 .resumo p {
@@ -55,6 +57,7 @@ div {
     flex: 50%;
     padding: 10px;
     border-bottom: 0;
+    height: auto;
 }
 
 .row {
@@ -73,6 +76,7 @@ div {
 } 
 
 .experiencia {
+    height: auto;
     border-bottom: 0;
 }
 
@@ -89,7 +93,15 @@ div {
     margin-left: 40%;
 }
 
+.educacao {
+    height: auto;
+}
+
 /* Idiomas */
+
+.idiomas {
+    height: auto;
+}
 
 .col-sm-6 {
     margin: auto -5%;
@@ -176,13 +188,6 @@ footer div {
 /* Responsivo Celular */
 
 @media only screen and (max-width: 768px) {
-    
-    .header {
-        height: 33%;
-    }
-    .resumo {
-        height: 47%;
-    }
 
     .curriculo {
         display: block
@@ -190,10 +195,6 @@ footer div {
 
     .coluna {
         width: 100%;
-    }
-
-    .educacao {
-        height: 35%
     }
 
     .idiomas {
