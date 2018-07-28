@@ -231,6 +231,10 @@ footer div {
         width: 100%;
         padding: 3px;
     }
+    
+    .row {
+        padding-left: 5%
+    }
 
     .proficiencia {
         display: none;
@@ -238,7 +242,7 @@ footer div {
     
     .col-xs-4 {
         padding: 5px;
-        margin: auto -3.8%;
+        margin: auto -2.75%;
         border-bottom: 0;
         display: table;
     }
