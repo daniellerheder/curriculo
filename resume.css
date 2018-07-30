@@ -3,8 +3,8 @@
 
 #pdf {
     position: fixed;
-    width: 5%;
-    margin: 5.5% 95.09%;
+    width: 7.5%;
+    margin: 5.5% 92.59%;
     height: 12%;
     font-family: 'Oswald', sans-serif;
     font-size: 160%;
@@ -19,6 +19,10 @@
     margin-left: 90.09%;
     text-decoration: none;
     transition: all 400ms ease-in-out;
+}
+
+#pdf:hover::before {
+    content: "Download ";
 }
 
 /* Header e Resumo */
