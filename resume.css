@@ -142,9 +142,7 @@ div {
     transition: all 400ms ease-in-out;
 }
 
-/* Competencias */
-
-.competencias, .tecnologias, #multicobra {
+.idiomas, .tecnologias, #multicobra {
     border-bottom: 0;
 }
 
@@ -222,7 +220,7 @@ footer div {
     }
     
     .row {
-        padding-left: 5%
+        padding-left: 10%;
     }
 
     .proficiencia {
@@ -234,10 +232,6 @@ footer div {
         margin: auto -2.75%;
         border-bottom: 0;
         display: table;
-    }
-
-    .tecnologias {
-        border-bottom: 0.08rem solid rgb(153, 153, 153);
     }
 
     #contato {
