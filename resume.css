@@ -95,14 +95,6 @@ div {
 .emprego ul {
     font-size: medium;
     margin-bottom: 3.5%;
-} 
-
-.experiencia {
-    border-bottom: 0;
-}
-
-#multicobra {
-    border-bottom: 0;
 }
 
 #antigos {
@@ -114,15 +106,8 @@ div {
     margin-left: 40%;
 }
 
-.educacao {
-    height: auto;
-}
 
 /* Idiomas */
-
-.idiomas {
-    height: auto;
-}
 
 .col-sm-6 {
     margin: auto -5%;
@@ -159,7 +144,7 @@ div {
 
 /* Competencias */
 
-.competencias {
+.competencias, .tecnologias, #multicobra {
     border-bottom: 0;
 }
 
@@ -250,21 +235,9 @@ footer div {
         border-bottom: 0;
         display: table;
     }
-    
-    .competencias {
+
+    .tecnologias {
         border-bottom: 0.08rem solid rgb(153, 153, 153);
-    }
-
-    #antigos {
-        display: none;
-    }
-
-    #toggle {
-        display: none;
-    }
-    
-    #tesseract{
-        border-bottom: 0;
     }
 
     #contato {
