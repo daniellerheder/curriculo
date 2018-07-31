@@ -1,21 +1,17 @@
 /* Importação da fonte Oswald */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-
 /* Header e Resumo */
 .header {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     border-top: 0.08rem solid rgb(22, 22, 22);
 }
-
 .header h1 {
     color: rgb(33, 33, 33);
     font-size: 420%;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
-
 .header h2 {
     color: rgb(90, 90, 90);
     font-size: 210%;
@@ -23,202 +19,163 @@
     margin-top: -1%;
     letter-spacing: 1px;
 }
-
 .dados {
     list-style: none;
+    padding-left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-
 .dados li {
-    display: inline;
-    margin-left: 10%;
+    margin: 0 5%;
 }
-
 .resumo {
     padding: 12px 25px;
     font-family: 'Oswald', sans-serif;
 }
-
 .resumo p {
     text-justify: auto;
 }
-
-/* Corpo */
-
 body {
     background-color: lightgray;
     width: 100%;
 }
-
 div {
     margin: 1.8rem auto;
     border-bottom: 0.08rem solid rgb(153, 153, 153);
     width: 80%;
     height: auto;
 }
-
 .curriculo {
     display: flex;
     font-family: 'Oswald', sans-serif;
     border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
-
 .coluna {
     flex: 50%;
     padding: 10px;
     border-bottom: 0;
 }
-
 .row {
     border-bottom: 0;
     display: inline-table;
     width: 100%;
     padding-left: 15%;
 }
-
-
-/* Emprego */
-
 .emprego ul {
     font-size: medium;
     margin-bottom: 3.5%;
 }
-
 #antigos {
     margin: 0;
 }
-
 .btn {
     background-color: transparent;
     margin-left: 40%;
 }
-
-
-/* Idiomas */
-
 .col-sm-6 {
     margin: auto -5%;
     border-bottom: 0;
     display: table;
 }
-
 .col-sm-6 h2 {
     margin-left: 10%;
 }
-
 .proficiencia {
     text-align: right;
 }
-
-/* Tecnologia */
-
 .col-xs-4 {
     padding: 7.5px;
     margin: auto -5%;
     border-bottom: 0;
     display: table;
 }
-
 .col-xs-4 img {
     width: 64px;
     height: 64px;
 }
-
 .col-xs-4 img:hover {
     transform: scale(1.3);
     transition: all 400ms ease-in-out;
 }
-
 .idiomas, .tecnologias, #multicobra {
     border-bottom: 0;
 }
-
-/* Rodapé */
-
 footer {
     font-size: 180%;
     text-align: center;
     color:  rgb(23, 23, 23);
     text-decoration: none;
     width: 100%;
+    display: flex;
 }
-
 footer a{
     color: rgb(23, 23, 23);
 }
-
 footer a:hover{
     text-decoration: none;
     color: #337AB7;
 }
-
 footer li {
         display: inline;
 }
-
 footer div {
     flex: 33%;
     font-size: 80%;
     margin: auto 15% auto 5% ;
     border-bottom: 0;
 }
-
 .fa-github:hover {
     color: dimgray;
 }
-
 .fa-google:hover {
     color: #F35045;
 }
-
 #contato {
     margin: auto 33% 33% auto;
 }
-
-/* Responsivo Celular */
-
 @media only screen and (max-width: 768px) {
-    
     div {
         margin: 5px auto;
         padding: 3px;
         width: 90%
     }
-    
     h2 {
         margin-top: -12%;
     }
-
     .resumo {
         padding: 5px 8px;    
     }
-    
     .curriculo {
         display: block
     }
-
     .coluna {
         width: 100%;
         padding: 3px;
     }
-    
     .row {
         padding-left: 10%;
     }
-
     .proficiencia {
         display: none;
     }
-    
     .col-xs-4 {
         padding: 5px;
         margin: auto -2.75%;
         border-bottom: 0;
         display: table;
     }
-
     #contato {
         margin: auto 5% 5% auto;
         font-size: 80%;
     }
-    
+    .dados li{
+        margin: 0;
+    }
+    .dados li:first-child {
+        margin-right: 5%;
+    }
+    .dados li:last-child {
+        display: none;
+    }
 }
