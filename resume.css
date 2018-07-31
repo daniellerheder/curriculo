@@ -1,30 +1,6 @@
 /* Importação da fonte Oswald */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-#pdf {
-    position: fixed;
-    width: 7.5%;
-    margin: 5.5% 92.59%;
-    height: 12%;
-    font-family: 'Oswald', sans-serif;
-    font-size: 160%;
-    background-color: rgb(180, 52, 52);
-    color: white;
-    padding: 15px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#pdf:hover {
-    width: 10%;
-    margin-left: 90.09%;
-    text-decoration: none;
-    transition: all 400ms ease-in-out;
-}
-
-#pdf:hover::before {
-    content: "Download ";
-}
-
 /* Header e Resumo */
 .header {
     font-family: 'Oswald', sans-serif;
@@ -37,6 +13,7 @@
     font-size: 420%;
     text-transform: uppercase;
     letter-spacing: 2px;
+
 }
 
 .header h2 {
@@ -45,6 +22,15 @@
     font-style: italic;
     margin-top: -1%;
     letter-spacing: 1px;
+}
+
+.dados {
+    list-style: none;
+}
+
+.dados li {
+    display: inline;
+    margin-left: 10%;
 }
 
 .resumo {
@@ -191,10 +177,6 @@ footer div {
 /* Responsivo Celular */
 
 @media only screen and (max-width: 768px) {
-    
-    #pdf {
-        display: none;
-    }
     
     div {
         margin: 5px auto;
