@@ -57,10 +57,6 @@
 .toggle-label input[type=checkbox]:checked+.back .label.off {
   color: #ddd;
 }
-
-.collapse {
-  transition: all linear 1s;
-}
 .header {
   font-family: 'Oswald', sans-serif;
   text-align: center;
@@ -184,9 +180,7 @@ footer div {
 .fa-google:hover {
   color: #F35045;
 }
-footer li:first-child {
-  margin: auto 33% 33% auto;
-}
+
 @media only screen and (max-width: 768px) {
   div {
     margin: 5px auto;
