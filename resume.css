@@ -1,181 +1,237 @@
 /* Importação da fonte Oswald */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-/* Header e Resumo */
+.toggle-label {
+  position: relative;
+  display: block;
+  width: 75px;
+  height: 25px;
+  border: 1px solid #808080;
+}
+.toggle-label input[type=checkbox]+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0069a6;
+  transition: background 150ms linear; 
+  margin-left: -43px;
+}
+.toggle-label input[type=checkbox]:checked+.back {
+  background: #00a651; /*green*/
+  margin-left: -43px;
+}
+.toggle-label input[type=checkbox]+.back .toggle {
+  display: block;
+  position: absolute;
+  content: ' ';
+  background: #fff;
+  width: 50%; 
+  height: 100%;
+  transition: margin 150ms linear;
+  border: 1px solid #808080;
+  border-radius: 0;
+}
+.toggle-label input[type=checkbox]:checked+.back .toggle {
+  margin-left: 37.5px;
+}
+.toggle-label .label {
+  display: block;
+  position: absolute;
+  width: 50%;
+  color: #ddd;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 20px;
+}
+.toggle-label .label.on { 
+  left: 0px; 
+}
+.toggle-label .label.off {
+  right: 0px; 
+}
+.toggle-label input[type=checkbox]:checked+.back .label.on {
+  color: #fff;
+}
+.toggle-label input[type=checkbox]+.back .label.off {
+  color: #fff;
+}
+.toggle-label input[type=checkbox]:checked+.back .label.off {
+  color: #ddd;
+}
+
+.collapse {
+  transition: all linear 1s;
+}
 .header {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    border-top: 0.08rem solid rgb(22, 22, 22);
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  border-top: 0.08rem solid rgb(22, 22, 22);
 }
 .header h1 {
-    color: rgb(33, 33, 33);
-    font-size: 420%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  color: rgb(33, 33, 33);
+  font-size: 420%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .header h2 {
-    color: rgb(90, 90, 90);
-    font-size: 210%;
-    font-style: italic;
-    margin-top: -1%;
-    letter-spacing: 1px;
+  color: rgb(90, 90, 90);
+  font-size: 210%;
+  font-style: italic;
+  margin-top: -1%;
+  letter-spacing: 1px;
 }
 .dados {
-    list-style: none;
-    padding-left: 0; 
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  list-style: none;
+  padding-left: 0; 
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .dados li {
-    margin: 0 5%;
+  margin: 0 5%;
 }
 .resumo {
-    padding: 12px 25px;
-    font-family: 'Oswald', sans-serif;
+  padding: 12px 25px;
+  font-family: 'Oswald', sans-serif;
 }
 .resumo p {
-    text-justify: auto;
+  text-justify: auto;
 }
 body {
-    background-color: lightgray;
-    width: 100%;
+  background-color: lightgray;
+  width: 100%;
 }
 div {
-    margin: 1.8rem auto;
-    border-bottom: 0.08rem solid rgb(153, 153, 153);
-    width: 80%;
-    height: auto;
+  margin: 1.8rem auto;
+  border-bottom: 0.08rem solid rgb(153, 153, 153);
+  width: 80%;
+  height: auto;
 }
 .curriculo {
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    border-bottom: 0.08rem solid rgb(22, 22, 22);
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 0.08rem solid rgb(22, 22, 22);
 }
 .coluna {
-    flex: 50%;
-    padding: 10px;
-    border-bottom: 0;
+  flex: 50%;
+  padding: 10px;
+  border-bottom: 0;
 }
 .row {
-    border-bottom: 0;
-    display: inline-table;
-    width: 100%;
-    padding-left: 15%;
+  border-bottom: 0;
+  display: inline-table;
+  width: 100%;
+  padding-left: 15%;
 }
 .emprego ul {
-    font-size: medium;
-    margin-bottom: 3.5%;
-}
-#antigos {
-    margin: 0;
-}
-.btn {
-    background-color: transparent;
-    margin-left: 40%;
+  font-size: medium;
+  margin-bottom: 3.5%;
 }
 .col-sm-6 {
-    margin: auto -5%;
-    border-bottom: 0;
-    display: table;
+  margin: auto -5%;
+  border-bottom: 0;
+  display: table;
 }
 .col-sm-6 h2 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 .proficiencia {
-    text-align: right;
+  text-align: right;
 }
 .col-xs-4 {
-    padding: 7.5px;
-    margin: auto -5%;
-    border-bottom: 0;
-    display: table;
+  padding: 7.5px;
+  margin: auto -5%;
+  border-bottom: 0;
+  display: table;
 }
 .col-xs-4 img {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
 }
 .col-xs-4 img:hover {
-    transform: scale(1.3);
-    transition: all 400ms ease-in-out;
+  transform: scale(1.3);
+  transition: all 400ms ease-in-out;
 }
 .idiomas, .tecnologias, #multicobra {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 footer {
-    font-size: 180%;
-    text-align: center;
-    color:  rgb(23, 23, 23);
-    text-decoration: none;
-    width: 100%;
-    display: flex;
+  font-size: 180%;
+  text-align: center;
+  color:  rgb(23, 23, 23);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
 }
 footer a{
-    color: rgb(23, 23, 23);
+  color: rgb(23, 23, 23);
 }
 footer a:hover{
-    text-decoration: none;
-    color: #337AB7;
+  text-decoration: none;
+  color: #337AB7;
 }
 footer li {
-        display: inline;
+      display: inline;
 }
 footer div {
-    flex: 33%;
-    font-size: 80%;
-    margin: auto 15% auto 5% ;
-    border-bottom: 0;
+  flex: 33%;
+  font-size: 80%;
+  margin: auto 15% auto 5% ;
+  border-bottom: 0;
 }
 .fa-github:hover {
-    color: dimgray;
+  color: dimgray;
 }
 .fa-google:hover {
-    color: #F35045;
+  color: #F35045;
 }
-#contato {
-    margin: auto 33% 33% auto;
+footer li:first-child {
+  margin: auto 33% 33% auto;
 }
 @media only screen and (max-width: 768px) {
-    div {
-        margin: 5px auto;
-        padding: 3px;
-        width: 90%
-    }
-    h2 {
-        margin-top: -12%;
-    }
-    .resumo {
-        padding: 5px 8px;    
-    }
-    .curriculo {
-        display: block
-    }
-    .coluna {
-        width: 100%;
-        padding: 3px;
-    }
-    .row {
-        padding-left: 10%;
-    }
-    .proficiencia {
-        display: none;
-    }
-    .col-xs-4 {
-        padding: 5px;
-        margin: auto -2.75%;
-        border-bottom: 0;
-        display: table;
-    }
-    #contato {
-        margin: auto 5% 5% auto;
-        font-size: 80%;
-    }
-    .dados li{
-        margin: 0;
-    }
-    .dados li:first-child {
-        margin-right: 5%;
-    }
-    .dados li:last-child {
-        display: none;
-    }
+  div {
+    margin: 5px auto;
+    padding: 3px;
+    width: 90%
+  }
+  h2 {
+    margin-top: -12%;
+  }
+  .resumo {
+    padding: 5px 8px;    
+  }
+  .curriculo {
+    display: block;
+  }
+  .coluna {
+    width: 100%;
+    padding: 3px;
+  }
+  .row {
+    padding-left: 10%;
+  }
+  .proficiencia {
+    display: none;
+  }
+  .col-xs-4 {
+    padding: 5px;
+    margin: auto -2.75%;
+    border-bottom: 0;
+    display: table;
+  }
+  #contato {
+    margin: auto 5% 5% auto;
+    font-size: 80%;
+  }
+  .dados li{
+    margin: 0;
+  }
+  .dados li:first-child {
+    margin-right: 5%;
+  }
+  .dados li:last-child {
+    display: none;
+  }
+  .dados li:nth-child(3){
+    display: none;
+  }
 }

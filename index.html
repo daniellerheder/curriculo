@@ -19,13 +19,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-        function change() {
-            var change = document.getElementById("toggle");
-            if (change.innerHTML == '<span class="glyphicon glyphicon-chevron-down"></span>') {
-                change.innerHTML = '<span class="glyphicon glyphicon-chevron-up"></span>';
-            }
-            else {
-                change.innerHTML = '<span class="glyphicon glyphicon-chevron-down"></span>';
+
+        function myFunction() {
+            var checkBox = document.getElementById("toggle");
+            if (checkBox.checked == true) {
+                $(".open-button").on("click", function () {
+                    $(this).closest('.collapse-group').find('.collapse').collapse('show');
+                });
+            } else {
+                $(".close-button").on("click", function () {
+                    $(this).closest('.collapse-group').find('.collapse').collapse('hide');
+                });
             }
         }
     </script>
@@ -39,12 +43,23 @@
         <ul class="dados">
             <li>giovannijrrossini@gmail.com</li>
             <li>+55 (14) 98233-6349</li>
-            <li><a href="/docs/curriculo.pdf" target="_blank">Download Versão PDF</a></li>
+            <li id="pdf">
+                <a href="/docs/curriculo.pdf" target="_blank">Download PDF</a>
+            </li>
+            <li>
+                <label class='toggle-label'>
+                    <input id="toggle" data-toggle="collapse" data-target="#demo,#demo2,#demo3,#demo4,#demo5,#demo6,#demo7,#demo8,#demo9,#demo10,#demo11,#demo12,#demo13,#demo14" type='checkbox' checked/>
+                    <span class='back'>
+                        <span class='toggle'></span>
+                        <span class='label on'>Pt</span>
+                        <span class='label off'>En</span>
+                    </span>
+                </label>
+            </li>
         </ul>
     </div>
-
-    <div class="resumo">
-        <p>
+    <div>
+        <p class="resumo collapse in" id="demo">
             Giovanni Junior Rossini, 22 anos, formando em Ciências da Computação. Mora em Bauru, interior de São Paulo. Entusiasta dos
             estudos e da tecnologia. Tenho cerca de três anos de experiência no mercado de tecnologia da informação, focado
             há mais de um ano em tecnologias de desenvolvimento da cultura DevOps e SysAdmin. Esforçado, focado e apaixonado
@@ -56,18 +71,37 @@
             <i>Grupo Tesseract</i>
             como Desenvolvedor DevOps e SysAdmin, procuro sempre me manter em equilibrio com o ambiente de trabalho.
         </p>
+        <p class="resumo collapse" id="demo2">
+            Giovanni Junior Rossini, 22 years old, graduated in Computer Science. Lives in Bauru, interior of São Paulo. Enthusiast of
+            studies and technology. I have about three years of experience in the information technology market, focused
+            on For more than a year in DevOps and SysAdmin development technologies. Effortless, focused and passionate by
+            new technologies. Self-taught emoticons, always seeking the best of the best things that an internet have to
+            promote us. My quest to specialize in the subject
+            <i> DevOps and SysAdmin </i> in the last two years and with total confidence in my work power. Currently working
+            on
+            <i> Insituto Soma </i> and
+            <i> Grupo Tesseract </i>
+            As a DevOps Developer and SysAdmin, I always strive to keep in balance with the work environment.
+        </p>
     </div>
 
     <div class="curriculo">
         <div class="coluna">
-            <div class="educacao">
+            <div class="educacao collapse in" id="demo3">
                 <h2>Formação Acadêmica</h2>
                 <div class="row">
                     <h3>Bacharel em Ciências da Computação</h3>
                     <p>Universidade Paulista - 2018</p>
                 </div>
             </div>
-            <div class="experiencia">
+            <div class="educacao collapse" id="demo4">
+                <h2>Education</h2>
+                <div class="row">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>Universidade Paulista - 2018</p>
+                </div>
+            </div>
+            <div class="experiencia collapse in" id="demo5">
                 <h2>Experiência</h2>
                 <div class="emprego">
                     <h3>Instituto Soma</h3>
@@ -93,7 +127,33 @@
                     <p>Agosto 2015 – Maio 2016</p>
                 </div>
             </div>
-            <div class="idiomas">
+            <div class="experiencia collapse" id="demo6">
+                <h2>Jobs Experience</h2>
+                <div class="emprego">
+                    <h3>Instituto Soma</h3>
+                    <h4>DevOps & SysAdmin</h4>
+                    <p>July 2017 – Currently</p>
+                </div>
+                <div class="emprego" id="tesseract">
+                    <h3>Grupo Tesseract</h3>
+                    <h4>DevOps</h4>
+                    <p>April 2018 – Currently</p>
+                </div>
+                <div class="emprego">
+                    <h3>Tilibra Produtos de Papelaria LTDA.</h3>
+                    <h4>Trainee Infrastructure and Networks</h4>
+                    <p>December 2016 – July 2017</p>
+                    </br>
+                    <h4>Trainee Support Infrastructure and Helpdesk</h4>
+                    <p>May 2016 – December 2016</p>
+                </div>
+                <div class="emprego" id="multicobra">
+                    <h3>Grupo Multicobra</h3>
+                    <h4>Information System Support</h4>
+                    <p>August 2015 – May 2016</p>
+                </div>
+            </div>
+            <div class="idiomas collapse in" id="demo7">
                 <h2>Idiomas</h2>
                 <div class="row">
                     <div class="col-sm-6">
@@ -122,9 +182,38 @@
                     </div>
                 </div>
             </div>
+            <div class="idiomas collapse" id="demo8">
+                <h2>Languages</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3> Portuguese </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="proficiencia"> Native </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3> English </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="proficiencia"> Advanced </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3> German </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="proficiencia"> Basic </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3> Spanish </h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="proficiencia"> Basic </h3>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="coluna">
-            <div class="competencias">
+            <div class="competencias collapse in" id="demo9">
                 <h2>Competências</h2>
                 <div class="row">
                     <ul>
@@ -149,8 +238,34 @@
                     </ul>
                 </div>
             </div>
+            <div class="competencias collapse" id="demo10">
+                <h2>Competences</h2>
+                <div class="row">
+                    <ul>
+                        <li> Manage environments </li>
+                        <li> Cloud providers </li>
+                        <li> Infrastructure as code </li>
+                        <li> Pipelines CI & CD </li>
+                        <li> SQL databases </li>
+                        <li> Containers & Clustering </li>
+                        <li> Automation </li>
+                        <li> Orchestration </li>
+                        <li> Network Management </li>
+                        <li> User Management </li>
+                        <li> Virtualization </li>
+                        <li> GNU / Linux and Windows environments </li>
+                        <li> Intermediate Servers Maintenance </li>
+                        <li> Server Management </li>
+                        <li> Monitoring networks and computers </li>
+                        <li> Computer Maintenance </li>
+                        <li> Helpdesk </li>
+                        <li> Administrative Routines </li>
+                    </ul>
+                </div>
+            </div>
             <div class="tecnologias">
-                <h2>Tecnologias</h2>
+                <h2 class="collapse in" id="demo11">Tecnologias</h2>
+                <h2 class="collapse" id="demo12">Technologies</h2>
                 <div class="row">
                     <div class="col-xs-4">
                         <img src="icons/html5.png" title="HTML5">
@@ -240,8 +355,11 @@
     <footer>
         <div>
             <ul>
-                <li id="contato">
+                <li class="collapse in" id="demo13">
                     Copyright © 2018 | Feito com ☕ por Giovanni Rossini
+                </li>
+                <li class="collapse" id="demo14">
+                        Copyright © 2018 | Made with ☕ by Giovanni Rossini
                 </li>
                 <li>
                     <a href="https://github.com/giovannirossini" class="fa fa-github"></a>
