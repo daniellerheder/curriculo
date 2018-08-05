@@ -5,7 +5,7 @@
   display: block;
   width: 75px;
   height: 25px;
-  border: 1px solid #808080;
+  border: 0px solid #808080;
 }
 .toggle-label input[type=checkbox]+.back {
   position: absolute;
@@ -14,6 +14,8 @@
   background: #0069a6;
   transition: background 150ms linear; 
   margin-left: -43px;
+  border-radius: 5px;
+
 }
 .toggle-label input[type=checkbox]:checked+.back {
   background: #00a651; /*green*/
@@ -28,7 +30,7 @@
   height: 100%;
   transition: margin 150ms linear;
   border: 1px solid #808080;
-  border-radius: 0;
+  border-radius: 5px;
 }
 .toggle-label input[type=checkbox]:checked+.back .toggle {
   margin-left: 37.5px;
@@ -41,12 +43,15 @@
   text-align: center;
   font-size: 1.2em;
   line-height: 20px;
+
 }
 .toggle-label .label.on { 
   left: 0px; 
+
 }
 .toggle-label .label.off {
   right: 0px; 
+  
 }
 .toggle-label input[type=checkbox]:checked+.back .label.on {
   color: #fff;
