@@ -103,9 +103,11 @@ body {
 }
 div {
   margin: 1.8rem auto;
-  border-bottom: 0.08rem solid rgb(153, 153, 153);
   width: 80%;
   height: auto;
+}
+div.separador {
+  border-bottom: 0.08rem solid rgb(153, 153, 153);
 }
 .curriculo {
   display: flex;
