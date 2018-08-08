@@ -13,14 +13,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #0069a6;
+  background: #510161;
   transition: background 150ms linear; 
   margin-left: -43px;
   border-radius: 5px;
 
 }
 .toggle-label input[type=checkbox]:checked+.back {
-  background: #00a651; /*green*/
+  background: #004d57; /*green*/
   margin-left: -43px;
 }
 .toggle-label input[type=checkbox]+.back .toggle {
@@ -155,6 +155,10 @@ div.separador {
 .emprego ul {
   font-size: medium;
   margin-bottom: 3.5%;
+}
+
+.ano {
+color: #808080
 }
 .col-sm-6 {
   margin: auto -5%;
